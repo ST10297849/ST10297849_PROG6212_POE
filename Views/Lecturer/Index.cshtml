@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Lecturer Dashboard";
+}
+
+<h2>Lecturer Dashboard</h2>
+
+<div>
+    <h3>Submit New Claim</h3>
+    <form method="post">
+        <label>Hours Worked:</label>
+        <input type="number" name="hoursWorked" /><br />
+
+        <label>Hourly Rate:</label>
+        <input type="number" name="hourlyRate" /><br />
+
+        <label>Upload Supporting Document:</label>
+        <input type="file" name="supportingDocument" /><br />
+
+        <button type="submit">Submit Claim</button>
+    </form>
+</div>
+
+<div>
+    <h3>Claim Status Tracker</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Claim ID</th>
+                <th>Status</th>
+                <th>Submission Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Placeholder for claim data -->
+            <tr>
+                <td>1</td>
+                <td>Pending</td>
+                <td>2024-01-10</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
